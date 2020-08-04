@@ -1,7 +1,7 @@
 {
   "name": "@pacificoseguros/cra-template-pacifico",
   "main": "template.json",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": {
     "name": "Edinson Nuñez More",
     "email": "nmedinson@gmail.com"

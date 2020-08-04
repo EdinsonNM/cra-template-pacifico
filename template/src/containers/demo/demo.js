@@ -1,11 +1,13 @@
-import React from "react";
-import Header from "./components/header";
-import logoImage from "../../assets/images/logo-pacifico.png";
 import "./styles/demo.scss";
+
 import {Button, Card} from "@pacificoseguros/pixie/react";
 
+import Header from "./components/header";
+import React from "react";
+import logoImage from "../../assets/images/logo-pacifico.png";
+
 export default function Demo() {
-    const changeTheme = type => () => {
+    const changeTheme = (type) => () => {
         if (type) document.body.setAttribute("data-theme", type);
         else document.body.removeAttribute("data-theme");
     };

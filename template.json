@@ -17,7 +17,10 @@
       "rxjs": "^6.5.4",
       "node-sass": "^4.14.1",
       "bundlesize": "^0.18.0",
-      "webpack-bundle-analyzer": "^3.6.0"
+      "webpack-bundle-analyzer": "^3.6.0",
+      "husky": "^4.2.5",
+      "lint-staged": "^10.2.11",
+      "prettier": "^2.0.5"
     },
     "scripts": {
       "bundlesize": "bundlesize",
@@ -50,6 +53,16 @@
         "path": "./build/static/media/**.*",
         "maxSize": "50 kB"
       }
-    ]
+    ],
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+          "prettier --write"
+      ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    }
   }
 }

@@ -1,18 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {defineCustomElements} from "@pacificoseguros/pixie/loader";
-import './assets/styles/index.css';
-import App from './containers/app/app';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
 import "@pacificoseguros/pixie/variables.css";
+import "./assets/styles/index.css";
 import "./assets/styles/theme/theme.scss";
 
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+
+import App from "./containers/app/app";
+import React from "react";
+import ReactDOM from "react-dom";
+import {defineCustomElements} from "@pacificoseguros/pixie/loader";
+import reportWebVitals from "./reportWebVitals";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
