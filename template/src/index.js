@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {defineCustomElements} from "@pacificoseguros/pixie/loader";
-import './index.css';
-import App from './App';
+import './assets/styles/index.css';
+import App from './containers/app/app';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import "@pacificoseguros/pixie/variables.css";
